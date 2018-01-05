@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KpHappy.Service", "KpHappy.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KpHappy.Web", "KpHappy.Web\KpHappy.Web.csproj", "{2F9CB0CD-E671-4DB9-A834-06EFA59ECDC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KpHappy.UnitTest", "KpHappy.UnitTest\KpHappy.UnitTest.csproj", "{D6B34153-5F67-4C19-8F7B-29D354E804E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2F9CB0CD-E671-4DB9-A834-06EFA59ECDC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9CB0CD-E671-4DB9-A834-06EFA59ECDC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9CB0CD-E671-4DB9-A834-06EFA59ECDC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B34153-5F67-4C19-8F7B-29D354E804E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B34153-5F67-4C19-8F7B-29D354E804E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B34153-5F67-4C19-8F7B-29D354E804E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B34153-5F67-4C19-8F7B-29D354E804E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
