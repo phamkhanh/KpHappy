@@ -12,6 +12,8 @@ namespace KpHappy.Service
     public interface IErrorService
     {
         Error Create(Error error);
+        IEnumerable<Error> GetAll();
+        Error Add(Error error);
         void Save();
     }
     public class ErrorService : IErrorService
@@ -23,9 +25,20 @@ namespace KpHappy.Service
             this._errorRepository = errorRepository;
             this._unitOfWork = unitOfWork;
         }
+
+        public Error Add(Error error)
+        {
+            return _errorRepository.Add(error);
+        }
+
         public Error Create(Error error)
         {
             return _errorRepository.Add(error);
+        }
+
+        public IEnumerable<Error> GetAll()
+        {
+            return _errorRepository.GetAll();
         }
 
         public void Save()

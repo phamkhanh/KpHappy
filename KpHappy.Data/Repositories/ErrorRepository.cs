@@ -1,4 +1,7 @@
-﻿using KpHappy.Data.Infrastructure;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using KpHappy.Data.Infrastructure;
 using KpHappy.Model.Models;
 
 namespace KpHappy.Data.Repositories
