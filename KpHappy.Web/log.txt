@@ -7,3 +7,28 @@ create sample view model TagViewModel
 init on Global.asax AutoMapperConfiguration
 code class EntityExtensions
 edit code PostCategoryController use viewmodel
+_______________________________
+
+Tích hợp ASP.NET Identity cho phần chứng thực người dùng
+Tạo project web mẫu. có tích hợp cơ chế authentication asp net identity để copy code
+cài nuget Microsoft.AspNet.Identity.EntityFramework cho tang web; model; và data
+cài nuget Microsoft.AspNet.Identity.Owin
+Tạo mới class User kế thừa từ IdentityUser trong tang Model
+thêm các field cần thiết vào class User
+cho class DbContext kế thừa từ IdentityDbContext<KpApplicationUser>
+tạo public static KpHappyDbContext Create() trong class DbContext
+        {
+            return new KpHappyDbContext();
+        }
+tạo file IdentityConfig trong App_Start
+code theo project mẫu
+tạo file Startup.Auth.cs. thêm partial class
+code theo project mẫu
+thực hiện migration
+edit protected override void OnModelCreating(DbModelBuilder builder) trong Class dbcontext
+        {
+            builder.Entity<IdentityUserRole>().HasKey(x => x.UserId);
+            builder.Entity<IdentityUserLogin>().HasKey(x => x.UserId);
+        }
+ConfigurationAuth(app); vào startup
+tao acccountcontroller

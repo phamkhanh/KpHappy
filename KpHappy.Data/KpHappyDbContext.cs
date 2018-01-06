@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using KpHappy.Model.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace KpHappy.Data
 {
-    public class KpHappyDbContext : DbContext
+    public class KpHappyDbContext : IdentityDbContext<KpApplicationUser>
     {
         public KpHappyDbContext() : base("KpHappyConnection")
         {
@@ -39,7 +40,14 @@ namespace KpHappy.Data
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            builder.Entity<IdentityUserLogin>().HasKey(x => x.UserId);
+        }
 
+        //identity
+        public static KpHappyDbContext Create()
+        {
+            return new KpHappyDbContext();
         }
     }
 }
