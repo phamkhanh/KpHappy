@@ -1,0 +1,9 @@
+﻿install nuget AutoMapper 4.2.1
+create class AutoMapperConfiguration
+create sample view model PostCategoryViewModel
+create sample view model PostViewModel
+create sample view model PostTagViewModel
+create sample view model TagViewModel
+init on Global.asax AutoMapperConfiguration
+code class EntityExtensions
+edit code PostCategoryController use viewmodel
