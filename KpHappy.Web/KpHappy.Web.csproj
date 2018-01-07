@@ -218,6 +218,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.js" />
+    <Content Include="app\components\products\product.routes.js" />
+    <Content Include="app\components\products\productAddController.js" />
+    <Content Include="app\components\products\productAddView.html" />
+    <Content Include="app\components\products\productEditController.js" />
+    <Content Include="app\components\products\productEditView.html" />
+    <Content Include="app\components\products\productListController.js" />
+    <Content Include="app\components\products\productListView.html" />
+    <Content Include="assets\admin\libs\angular\angular-csp.css" />
+    <Content Include="assets\admin\libs\angular\angular.js" />
+    <Content Include="assets\admin\libs\angular\angular.min.js" />
+    <Content Include="assets\admin\libs\angular\index.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -232,6 +244,14 @@
     </Content>
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="assets\admin\libs\angular\.bower.json" />
+    <Content Include="assets\admin\libs\angular\angular.min.js.gzip" />
+    <Content Include="assets\admin\libs\angular\angular.min.js.map" />
+    <Content Include="assets\admin\libs\angular\bower.json" />
+    <Content Include="assets\admin\libs\angular\LICENSE.md" />
+    <Content Include="assets\admin\libs\angular\package.json" />
+    <Content Include="assets\admin\libs\angular\README.md" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -241,10 +261,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\plugins\angular\angular-csp.css" />
-    <Content Include="Scripts\plugins\angular\angular.js" />
-    <Content Include="Scripts\plugins\angular\angular.min.js" />
-    <Content Include="Scripts\plugins\angular\index.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />
@@ -261,16 +277,12 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Scripts\plugins\angular\.bower.json" />
-    <Content Include="Scripts\plugins\angular\angular.min.js.gzip" />
-    <Content Include="Scripts\plugins\angular\angular.min.js.map" />
-    <Content Include="Scripts\plugins\angular\bower.json" />
-    <Content Include="Scripts\plugins\angular\LICENSE.md" />
-    <Content Include="Scripts\plugins\angular\package.json" />
-    <Content Include="Scripts\plugins\angular\README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="assets\admin\" />
+    <Folder Include="app\shared\services\" />
+    <Folder Include="assets\admin\css\" />
+    <Folder Include="assets\admin\img\" />
+    <Folder Include="assets\admin\js\" />
     <Folder Include="assets\client\" />
   </ItemGroup>
   <ItemGroup>
