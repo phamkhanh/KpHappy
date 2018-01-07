@@ -32,3 +32,7 @@ edit protected override void OnModelCreating(DbModelBuilder builder) trong Class
         }
 ConfigurationAuth(app); vào startup
 tao acccountcontroller
+_______________________________
+
+cài đặt bower quản lý thư viện js
+tao file .bowerrc
