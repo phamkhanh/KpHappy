@@ -220,13 +220,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
-    <Content Include="app\components\products\product.routes.js" />
+    <Content Include="app\components\home\homeController.js" />
+    <Content Include="app\components\home\homeView.html" />
+    <Content Include="app\components\products\product.module.js" />
     <Content Include="app\components\products\productAddController.js" />
     <Content Include="app\components\products\productAddView.html" />
     <Content Include="app\components\products\productEditController.js" />
     <Content Include="app\components\products\productEditView.html" />
     <Content Include="app\components\products\productListController.js" />
     <Content Include="app\components\products\productListView.html" />
+    <Content Include="app\shared\modules\kphappy.common.js" />
     <Content Include="assets\admin\css\AdminLTE.css" />
     <Content Include="assets\admin\css\AdminLTE.min.css" />
     <Content Include="assets\admin\css\alt\AdminLTE-bootstrap-social.css" />
@@ -1974,7 +1977,6 @@
     </Content>
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
-    <Content Include="app\app.routes.js" />
     <Content Include="assets\admin\css\adminlte.css.map" />
     <Content Include="assets\admin\css\adminlte.min.css.map" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
