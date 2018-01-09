@@ -77,6 +77,7 @@
     <Compile Include="KpHappyDbContext.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\PostCategoryRepository.cs" />
+    <Compile Include="Repositories\ProductCategoryRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

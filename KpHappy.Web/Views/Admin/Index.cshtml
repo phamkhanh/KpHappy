@@ -231,6 +231,19 @@
                     </li>
                     <li class="treeview">
                         <a href="#">
+                            <i class="fa fa-dashboard"></i> <span>Product Category</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a ui-sref="productCategoryList"><i class="fa fa-circle-o"></i> Product Category List</a></li>
+                            <li><a ui-sref="productCategoryEdit"><i class="fa fa-circle-o"></i> Product Category Edit</a></li>
+                            <li><a ui-sref="productCategoryAdd"><i class="fa fa-circle-o"></i> Product Category Add</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
                             <i class="fa fa-files-o"></i>
                             <span>Layout Options</span>
                             <span class="pull-right-container">
@@ -595,12 +608,20 @@
     <!-- Embed AngularJS -->
     <script src="~/assets/admin/libs/angular/angular.js"></script>
     <script src="~/assets/admin/libs/angular-ui-router/release/angular-ui-router.js"></script>
+    
     <script src="~/app/shared/modules/kphappy.common.js"></script>
-    <script src="~/app/components/products/product.module.js"></script>
+    <script src="~/app/shared/services/apiService.js"></script>
+
     <script src="~/app/app.js"></script>
+
+    <script src="~/app/components/products/product.module.js"></script>    
     <script src="~/app/components/products/productAddController.js"></script>
     <script src="~/app/components/products/productListController.js"></script>
     <script src="~/app/components/products/productEditController.js"></script>
+
+    <script src="~/app/components/product_category/productCategory.module.js"></script>
+    <script src="~/app/components/product_category/productCategoryListController.js"></script>
+
     <script src="~/app/components/home/homeController.js"></script>
 </body>
 </html>

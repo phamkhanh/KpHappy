@@ -1,5 +1,8 @@
 ﻿(function () {
-    angular.module('kphappy', ['kphappy.products', 'kphappy.common']).config(config);
+    angular.module('kphappy',
+        ['kphappy.products',
+        'kphappy.productCategory',
+        'kphappy.common']).config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
