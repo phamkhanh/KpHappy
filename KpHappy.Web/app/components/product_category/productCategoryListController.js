@@ -14,14 +14,14 @@
             var configs = {
                 params: {
                     page: page,
-                    pageSize: 2
+                    pageSize: 1
                 }
             }
             apiService.get('/api/productcategory/getall', configs,
                 function (result) {
                     $scope.productCategoryList = result.data.Items;
                     $scope.page = result.data.Page;
-                    $scope.pageCount = result.data.TotalPages;
+                    $scope.pagesCount = result.data.TotalPages;
                     $scope.totalCount = result.data.TotalCount;
                 },
                 function () {

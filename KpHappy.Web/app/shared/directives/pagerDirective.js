@@ -19,13 +19,14 @@
                 '$scope', function ($scope) {
                     $scope.search = function (i) {
                         if ($scope.searchFunc) {
-                            $scope.searchFunc({ page: i });
+                            if (i < $scope.pagesCount && i >= 0)
+                                $scope.searchFunc({ page: i });
                         }
                     };
 
                     $scope.range = function () {
                         if (!$scope.pagesCount) { return []; }
-                        var step = 2;
+                        var step = 3;
                         var doubleStep = step * 2;
                         var start = Math.max(0, $scope.page - step);
                         var end = start + 1 + doubleStep;
