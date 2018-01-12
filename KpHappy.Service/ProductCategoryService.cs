@@ -15,6 +15,8 @@ namespace KpHappy.Service
 
         IEnumerable<ProductCategory> GetAll();
 
+        IEnumerable<ProductCategory> GetAll(string keyWord);
+
         IEnumerable<ProductCategory> GetAllByParentId(int parentId);
 
         ProductCategory GetById(int id);
@@ -46,6 +48,18 @@ namespace KpHappy.Service
         public IEnumerable<ProductCategory> GetAll()
         {
             return _productCategoryRepository.GetAll();
+        }
+
+        public IEnumerable<ProductCategory> GetAll(string keyWord)
+        {
+            if (!string.IsNullOrEmpty(keyWord))
+            {
+                return _productCategoryRepository.GetMulti(x => x.Name.Contains(keyWord) || x.Description.Contains(keyWord));
+            }
+            else
+            {
+                return _productCategoryRepository.GetAll();
+            }
         }
 
         public IEnumerable<ProductCategory> GetAllByParentId(int parentId)

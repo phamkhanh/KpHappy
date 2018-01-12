@@ -23,12 +23,12 @@ namespace KpHappy.Web.Api
         }
 
         [Route("getall")]
-        public HttpResponseMessage Get(HttpRequestMessage request, int page, int pageSize = 2)
+        public HttpResponseMessage Get(HttpRequestMessage request, string keyWord, int page, int pageSize = 2)
         {
             return CreateHttpResponse(request, () =>
             {
                 int totalRow = 0;
-                var listCategory = _productCategoryService.GetAll();
+                var listCategory = _productCategoryService.GetAll(keyWord);
                 totalRow = listCategory.Count();
 
                 var query = listCategory.OrderByDescending(x => x.CreatedDate).Skip(page * pageSize).Take(pageSize);
